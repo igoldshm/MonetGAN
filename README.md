@@ -17,6 +17,8 @@ pip install -r requirements.txt
 ```bash
 git clone https://github.com/igoldshm/MonetGAN
 ```
+## Model
+In this project we used CycleGAN as our base architecture.
 
 ## License
 This project is licensed under the MIT License.
