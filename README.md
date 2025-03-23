@@ -19,7 +19,10 @@ git clone https://github.com/igoldshm/MonetGAN
 ```
 ## Model
 In this project we used CycleGAN as our base architecture.
-
+### Generator  implementation
+### Discriminator  implementation
+### Loss calculation
+## Training
 ## License
 This project is licensed under the MIT License.
 ## Acknowledgments
