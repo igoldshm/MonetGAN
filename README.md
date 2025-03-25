@@ -24,10 +24,17 @@ In this project we used CycleGAN as our base architecture.
 ### Loss calculation
 #### Generator loss
 The generator loss is the sum of three different losses:
-- Adversarial loss - the aim of the generator is to fool the discrimnator -> pred(fake monet) = 1
-- Identity loss - Monet → Monet should remain unchanged
-- Cycle Consistency Loss - Loss for reconstructing photo from fake Monet. Real → Monet → Real
+- Adversarial loss - the aim of the generator is to fool the discrimnator -> pred(fake monet) = 1 (MSELoss)
+- Identity loss - Monet → Monet should remain unchanged (L1Loss)
+- Cycle Consistency Loss - Loss for reconstructing photo from fake Monet. Real → Monet → Real (L1Loss)
 ## Training
+- Generator optimizer: Adam
+- Discriminator optimizer: Adam
+- Learning rate: 0.0002
+- Epochs = 100
+- LAMBDA_CYCLE = 1  # Weight for cycle consistency loss
+- LAMBDA_IDENTITY = 1  # Weight for identity loss
+
 ## License
 This project is licensed under the MIT License.
 ## Acknowledgments
