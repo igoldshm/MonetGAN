@@ -32,8 +32,8 @@ The discriminator loss is the adversarial loss - pred(fake monet)=0 (MSELoss)
 ## Training
 - Generator optimizer: Adam
 - Discriminator optimizer: Adam
-- Learning rate: 0.0002
-- Epochs = 100
+- Learning rate: 0.0002 (learining rate decay after 100 epochs)
+- Epochs = 200
 - LAMBDA_CYCLE = 1  (Weight for cycle consistency loss)
 - LAMBDA_IDENTITY = 1  (Weight for identity loss)
 
