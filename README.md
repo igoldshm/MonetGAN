@@ -28,7 +28,7 @@ The generator loss is the sum of three different losses:
 - Adversarial loss - the aim of the generator is to fool the discriminator -> pred(fake monet)=1 (MSELoss)
 - Identity loss - Monet → Monet should remain unchanged (L1Loss)
 - Cycle Consistency Loss - Loss for reconstructing photo from fake Monet. Real → Monet → Real (L1Loss)
-##### Loss weight optimization
+##### LAMBDA optimization
 - We have been expirimenting with different values for the weights of each loss (LAMBDA) to get the best visual outcome.
 #### Discriminator loss
 The discriminator loss is the adversarial loss - pred(fake monet)=0 (MSELoss)
