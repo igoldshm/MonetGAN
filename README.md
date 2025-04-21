@@ -20,7 +20,8 @@ git clone https://github.com/igoldshm/MonetGAN
 ## Model
 In this project we used CycleGAN as our base architecture.
 ### Generator  implementation
-
+In CycleGAN there are two generators one that generates fake Monet paintings from real photos (photo -> monet) and the second one that is doing the opposite (monet -> photo).
+In terms of architecture they are identical and contain and encoder and decoder. Betwwen them (after the downscailing process by the encoder), there are 9 resnet blocks
 ### Discriminator  implementation
 ### Loss calculation
 #### Generator loss
