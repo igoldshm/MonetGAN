@@ -18,7 +18,7 @@ pip install -r requirements.txt
 git clone https://github.com/igoldshm/MonetGAN
 ```
 ## Challenges
-To train our model we downloaded the Monet/photo dataset from Kaggle. We noticed there is a severe imbalence between the number of real photos and the monet style paintings. 
+We trained our model using the Monet/Photo dataset from Kaggle. During preprocessing, we observed a significant imbalance between the number of real-world photos (7028) and Monet-style paintings (300).
 ## Model
 In this project we used CycleGAN as our base architecture.
 ### Generator  implementation
