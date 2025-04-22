@@ -17,6 +17,8 @@ pip install -r requirements.txt
 ```bash
 git clone https://github.com/igoldshm/MonetGAN
 ```
+## Challenges
+To train our model we downloaded the Monet/photo dataset from Kaggle. We noticed there is a severe imbalence between the number of real photos and the monet style paintings. 
 ## Model
 In this project we used CycleGAN as our base architecture.
 ### Generator  implementation
