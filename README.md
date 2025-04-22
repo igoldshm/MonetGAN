@@ -18,7 +18,7 @@ pip install -r requirements.txt
 git clone https://github.com/igoldshm/MonetGAN
 ```
 ## Challenges
-We trained our model using the Monet/Photo dataset from Kaggle. During preprocessing, we observed a significant imbalance between the number of real-world photos (7028) and Monet-style paintings (300). This imbalance can effect the performance of our model, making the photo discriminator much more powerful, and therefor damaging the training of the (monet->photo) generator and the efficiancy of the Cycle Consistency Loss.
+We trained our model using the Monet/Photo dataset from Kaggle. During preprocessing, we observed a significant imbalance between the number of real-world photos (7,028) and Monet-style paintings (300). This imbalance can affect the performance of the model by making the photo discriminator disproportionately strong (as it being trained on more samples). As a result, the training of the Monet-to-photo generator may suffer, and the effectiveness of the cycle consistency loss can be reduced, since the network struggles to maintain a balanced bidirectional mapping.
 ## Model
 In this project we used CycleGAN as our base architecture.
 ### Generator  implementation
