@@ -47,7 +47,8 @@ The discriminator loss is the adversarial loss - pred(fake monet)=0 (MSELoss)
 - Epochs = 200
 - LAMBDA_CYCLE = 1  (Weight for cycle consistency loss)
 - LAMBDA_IDENTITY = 1  (Weight for identity loss)
-
+## Evaluation
+We conducted an objective evaluation of the generated images by calculating their Frechet Inception Distance (FID) score, which serves as a strong indicator of image quality. This metric is useful for guiding loss tuning during model optimization.
 ## License
 This project is licensed under the MIT License.
 ## Acknowledgments
