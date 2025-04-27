@@ -48,7 +48,7 @@ The discriminator loss is the adversarial loss - pred(fake monet)=0 (MSELoss)
 - LAMBDA_CYCLE = 1  (Weight for cycle consistency loss)
 - LAMBDA_IDENTITY = 1  (Weight for identity loss)
 ## Evaluation
-We conducted an objective evaluation of the generated images by calculating their Frechet Inception Distance (FID) score, which serves as a strong indicator of image quality. This metric is useful for guiding loss tuning during model optimization. In the process, a pretrained InceptionV3 network compares the distributions of features extracted from the two datasets (real and generated). FID measures how close those distributions are in ters of mean and covariance (spread).
+We conducted an objective evaluation of the generated images by calculating their Frechet Inception Distance (FID) score, which serves as a strong indicator of image quality. This metric is useful for guiding loss tuning during model optimization. In the process, a pretrained InceptionV3 network compares the distributions of features extracted from the two datasets (real and generated). FID measures how close those distributions are in terms of mean and covariance (spread).
 ## License
 This project is licensed under the MIT License.
 ## Acknowledgments
