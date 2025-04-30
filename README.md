@@ -19,6 +19,8 @@ git clone https://github.com/igoldshm/MonetGAN
 ```
 ## Challenges - imbalanced dataset
 We trained our model using the Monet/Photo dataset from Kaggle. During preprocessing, we observed a significant imbalance between the number of real-world photos (7,028) and Monet-style paintings (300). This imbalance can affect the performance of the model by making the photo discriminator disproportionately strong (as it being trained on more samples). As a result, the training of the Monet-to-photo generator may suffer, and the effectiveness of the cycle consistency loss can be reduced, since the network struggles to maintain a balanced bidirectional mapping.
+
+To tackle this challenge, we opted for paired training, where the dataset consists of 300 pairs of Monet paintings and real photos. The number of pairs is constrained by the available Monet paintings, which leads to an undersampling of the real photo domain (B).
 ###  Solution
 To mitigate the effects of the imbalanced dataset, we applied a balanced strategy that combines the following techniques:
 - Data augmentation on the Monet dataset to increase visual diversity and reduce overfitting
